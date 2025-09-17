@@ -66,7 +66,7 @@ function SERVICE {
 }
 
 function VULN {
-	echo -e "${PURP}[*} Detecting Basic Vulns...${NC}"
+	echo -e "${PURP}[*] Detecting Basic Vulns...${NC}"
 	echo -e "${GREEN}$TIMESTAMP${NC}" >> $VULN_FILE
 	nmap --script vuln $IP >> $VULN_FILE
 }
